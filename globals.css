@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities"; */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,6 +30,13 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+} */
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -60,3 +71,4 @@ body {
 .shake {
   animation: shake 0.5s ease-in-out;
 }
+

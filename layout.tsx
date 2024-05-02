@@ -9,7 +9,7 @@ import { SessionProvider } from "next-auth/react";
 import React from "react";
 import { useLoadUserQuery } from "@/redux/features/api/apiSlice";
 import Loader from "./components/Loader/Loader"
-
+// import config from "@/app/config";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${josefin.variable} !bg-[#0f0f31] bg-no-repeat dark:bg-gradient-to-black  dark:to-black duration-300`}>
+      <body className={`${poppins.variable} ${josefin.variable} !bg-white bg-no-repeat dark:bg-gradient-to-b dark:from-gray-900 dark:to-black duration-300`}>
         <Providers>
           <SessionProvider>
             <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
